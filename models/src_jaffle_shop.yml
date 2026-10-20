@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: dbt-tutorial  # Projeto público da dbt no BigQuery
+    schema: jaffle_shop
+    tables:
+      - name: customers
+      - name: orders
+
+  - name: stripe
+    database: dbt-tutorial  # Projeto público da dbt no BigQuery
+    schema: stripe
+    tables:
+      - name: payment
